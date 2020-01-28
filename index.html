@@ -23,32 +23,58 @@
                 <div class="containerhead">
                     <img src="jujube3.png" class="img-fluid overlayimg" >
                     <img src="foodheader3.jpg" class="img-fluid"  width="2048px">
-                    <p class="lead">Order Now</p>
+                    <center> <p class="lead"><h1>Order Now!</h1></p></center>
                
                     
                 </div>
             </div>
 </div>
-<button class="collapsible">Lunch</button>
+<button class="collapsible">Favorites</button>
 <div class="content">
-        <a href="#">
+        <a href="#"data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none">
         <div class="row foodcards" id="fooditem" onclick="itemClick()">
             <img src="noodles.jpg" class=" float-left" height="100px">
-                <p class="lead ">Chicken Wings</p>
+                <p class="lead ">Bim Bim Bop</p>
                 </div></a>
                
                
-                <a href="#">
+                <a href="#" data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none">
                    <div class="row foodcards" id="fooditem2" onclick="itemClick2()">
                         <img src="noodles.jpg" class=" float-left" height="100px">
-                           <p class="lead fooditem ">Chicken Wings</p>
+                           <p class="lead fooditem ">Pad Thai</p>
                            </div></a>
                        
 </div>
+<button class="collapsible">Lunch</button>
+<div class="content">
+    <a href="#"data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none">
+        <div class="row foodcards" id="fooditem" onclick="itemClick()">
+            <img src="noodles.jpg" class=" float-left" height="100px">
+                <p class="lead ">Bim Bim Bop</p>
+                </div></a>
+               
+               
+                <a href="#" data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none"></a>>
+                   <div class="row foodcards" id="fooditem2" onclick="itemClick2()">
+                        <img src="noodles.jpg" class=" float-left" height="100px">
+                           <p class="lead fooditem ">Pad Thai</p>
+                           </div></a>
+</div>
 <button class="collapsible">Dinner</button>
-<div class="content"></div>
-<button class="collapsible">Favorites</button>
-<div class="content"></div>
+<div class="content">
+    <a href="#"data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none">
+        <div class="row foodcards" id="fooditem" onclick="itemClick()">
+            <img src="noodles.jpg" class=" float-left" height="100px">
+                <p class="lead ">Bim Bim Bop</p>
+                </div></a>
+               
+               
+                <a href="#" data-target="#modalfood1" data-toggle="modal" class="color-gray-darker c6 td-hover-none"></a>>
+                   <div class="row foodcards" id="fooditem2" onclick="itemClick2()">
+                        <img src="noodles.jpg" class=" float-left" height="100px">
+                           <p class="lead fooditem ">Pad Thai</p>
+                           </div></a>
+</div>
 
 <div class="row foodcards" id="fooditem3" onclick="itemClick3()">
         <img src="noodles.jpg" class=" float-left" height="100px">
@@ -81,10 +107,72 @@
                         <br><br>
                        </div>
                    <div class="navbar">
-                        <a href="#home">Account</a>
+                        <a href="#">Account</a>
                         <a href="#news">Order History</a>
-                        <a href="#contact">Shopping Bag</a>
-                      </div>
+                        <a href="cart.html">Shopping Bag</a>
+                    </div>
+
+                    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalfood1" role="dialog" tabindex="-1">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body mb-0 p-0">
+                                    <center><div class="containerhead">Bim Bim Bop</div></center>
+                                   <center> <p class="Lead">Select options</p><br></center>
+                                   <img src="noodles.jpg" class="foodoptimg float-left" height="75px">
+                                    <form class="foodoptions">
+                                        
+                                        Chicken <input type="radio"class="foodoptions2" name="Option" value="Choice" checked> <br>
+                                        Beef   <input type="radio" class="foodoptions2" name="Option" value="Choice"> <br>
+                                       Tofu   <input type="radio" class="foodoptions2" name="Option" value="Choice">  <br>
+                                  
+                                    </form> 
+                                    <hr><br><br>
+                                   <center> <p class="Lead">Select sides</p></center>
+                                    <form class="foodoptions">
+                                        Fried Rice  <input type="radio" class="foodoptions2" name="Option2" value="Choice"> <br>
+                                       White Rice   <input type="radio" class="foodoptions2" name="Option2" value="Choice"> <br>
+                                      </form> 
+                                 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button data-dismiss="modal" type="button">Close</button>
+                                    <button data-dismiss="modal" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="cart" role="dialog" tabindex="-1">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body mb-0 p-0">
+                                    <center><div class="containerhead">Bim Bim Bop</div></center>
+                                   <center> <p class="Lead">Select options</p><br></center>
+                                   <img src="noodles.jpg" class="foodoptimg float-left" height="75px">
+                                    <form class="foodoptions">
+                                        
+                                        Chicken <input type="radio"class="foodoptions2" name="Option" value="Choice" checked> <br>
+                                        Beef   <input type="radio" class="foodoptions2" name="Option" value="Choice"> <br>
+                                       Tofu   <input type="radio" class="foodoptions2" name="Option" value="Choice">  <br>
+                                  
+                                    </form> 
+                                    <hr><br><br>
+                                   <center> <p class="Lead">Select sides</p></center>
+                                    <form class="foodoptions">
+                                        Fried Rice  <input type="radio" class="foodoptions2" name="Option2" value="Choice"> <br>
+                                       White Rice   <input type="radio" class="foodoptions2" name="Option2" value="Choice"> <br>
+                                      </form> 
+                                 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button data-dismiss="modal" type="button">Close</button>
+                                    <button data-dismiss="modal" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         <!-- <div class="row">
             Here is more text
         </div> -->
